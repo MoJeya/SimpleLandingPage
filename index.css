@@ -1,0 +1,178 @@
+@import url("family=Mukta:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+/*Alles soll auf null*/
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+   height: 100%;
+   font-family: 'Mukta', sans-serif;;
+   box-sizing: border-box;
+}
+
+body{
+    background-color: #3E3E3E;
+}
+
+#main-Content, #Sec-content{
+    height: 100%;
+    background-color:#3E3E3E;
+    padding-top: 50px;
+    background-image: url("Assets/waves.svg");
+    background-repeat:no-repeat ;
+    background-position-y: top;
+}
+
+#Sec-content{
+    background-image: url("Assets/waves-upside.svg");
+    background-color:#3E3E3E;
+    background-position-y: bottom;
+    text-align: center;
+    
+}
+
+nav{
+    display: flex;
+    width: 70%;
+    font-size: 25px;
+    /*Damit der inhalt einen Abstand dazwischen hat*/
+    justify-content: space-between;
+    color:#EAEAEA ;
+    border-radius:10px;
+    box-shadow: 5px 5px 15px #000000b6;
+    padding: 15px;
+    /*Setzt die nav selbst in die mitte*/
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+/*um die ul nebeneinander zu bekommen muss mann ul im css Targeten*/
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    padding: 10px;
+}
+
+/*Die Icons stylen*/
+nav i{
+    padding: 5px;
+    padding-right: 25px;
+}
+.content-body{
+    display:flex;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10%;
+    justify-content: space-evenly;
+    justify-content: space-around ;
+   
+    
+}
+.content-body h1{
+    font-size: 50px;
+    
+    
+}
+.Text-container{
+
+    width: 350px; 
+    height: 227px;  
+    color: #EAEAEA;
+    text-align: left;
+    font-family: 'Roboto',sans-serif;
+    background-color: #252323;
+    padding: 10px;
+   
+    
+}
+/*Scale alles andere herunter*/
+@media(max-width: 1500px){
+    .Text-container{
+        width: 150px;
+        height: 150px;
+        overflow: scroll;
+    }
+    .content-body h1{
+        font-size: 25px;
+    }
+
+    #button{
+        width: 20%;
+        height: 10%;
+        padding: 20px;
+       
+    }
+    #button span{
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 2px;
+    }
+    .content-body img{
+        height: 10px;
+        width: 100px;
+    }
+
+
+}
+
+
+
+#button{
+
+    background-color: #EAEAEA;
+    font-size: 22px;
+    width: 40%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 15%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#button:hover{
+    background-color: #7c7a7a;
+    cursor: pointer;
+}
+
+.content-body img{
+    border-radius: 5px;
+    height: 15%;
+    border: solid black 5px;
+    /*background-color: #EAEAEA;*/
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+.Lookbook-Container{
+    justify-content: space-evenly;
+    width: 70%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: -50px;
+    overflow: hidden;
+
+    
+}
+
+.Lookbook-Container img{
+    display: inline-flex;
+    width: 25%;
+    height: 45%;
+    
+}
+#Sec-content{
+    margin-top: -100px;
+}
+
+
+
+
+
+
+
